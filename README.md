@@ -18,7 +18,7 @@ Obviously, for it to work, your bot needs to have either 1000+ gems or at least 
 ## Installation
 
 Work of this plugin is only guaranteed with [generic ASF variant](https://github.com/JustArchiNET/ArchiSteamFarm/wiki/Setting-up#generic-setup), so if you use any other variant you are encouraged to switch to generic. Please don't report any issues if you are running some other variant, like `win-x64`, etc.
-After that, download `FixBigInventories.zip` from [latest release page](/releases/latest), create new folder (called, for example, `FixBigInventories`) inside of ASF's `plugins` folder, and unpack downloaded archive there.
+After that, download `FixBigInventories.zip` from [latest release page](https://github.com/CatPoweredPlugins/FixBigInventories/releases/latest), create new folder (called, for example, `FixBigInventories`) inside of ASF's `plugins` folder, and unpack downloaded archive there.
 Now you have to configure the bots where this plugin should be triggered as explained below.
 
 ## Configuration
