@@ -4,14 +4,14 @@ using ArchiSteamFarm.Core;
 using ArchiSteamFarm.Plugins.Interfaces;
 using JetBrains.Annotations;
 
-namespace MyAwesomePlugin;
+namespace FixBigInventories;
 
 #pragma warning disable CA1812 // ASF uses this class during runtime
 [UsedImplicitly]
-internal sealed class MyAwesomePlugin : IGitHubPluginUpdates {
-	public string Name => nameof(MyAwesomePlugin);
-	public string RepositoryName => "JustArchiNET/ASF-PluginTemplate";
-	public Version Version => typeof(MyAwesomePlugin).Assembly.GetName().Version ?? throw new InvalidOperationException(nameof(Version));
+internal sealed class FixBigInventories : IGitHubPluginUpdates {
+	public string Name => nameof(FixBigInventories);
+	public string RepositoryName => "CatPoweredPlugins/FixBigInventories";
+	public Version Version => typeof(FixBigInventories).Assembly.GetName().Version ?? throw new InvalidOperationException(nameof(Version));
 
 	public Task OnLoaded() {
 		ASF.ArchiLogger.LogGenericInfo($"Hello {Name}!");
