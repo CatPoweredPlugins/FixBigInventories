@@ -28,7 +28,7 @@ internal sealed class FixBigInventories : IGitHubPluginUpdates, IBotModules, IBo
 	}
 
 	public async Task OnBotTradeOfferResults(Bot bot, IReadOnlyCollection<ParseTradeResult> tradeResults) {
-		if (EnabledBots.Contains(bot)) {
+		if (EnabledBots.Contains(bot) && bot.IsConnectedAndLoggedOn) {
 			if (tradeResults.Any(static result => result is { Result: ParseTradeResult.EResult.Accepted, Confirmed: true })) {
 				bool success = false;
 
