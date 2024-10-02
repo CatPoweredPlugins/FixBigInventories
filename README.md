@@ -11,7 +11,7 @@ This plugin uses 3rd party code from https://github.com/SmallTailTeam/SmallTail.
 
 ## Description
 
-This is a plugin for [ArchiSteamFarm](https://github.com/JustArchiNet/ArchiSteamFarm) that implements "quick and dirty" fix for trading bots with big inventories.
+According to user reports, if your inventory contains more than 50000 items, some trade may be marked cancelled for no apparent reason. This plugin for [ArchiSteamFarm](https://github.com/JustArchiNet/ArchiSteamFarm) implements "quick and dirty" fix for trading bots with such big inventories. 
 After each accepted and confirmed trade, it either packs gems to gem sack, or unpacks a gem sack to gems, depending on what is found first in inventory.
 Obviously, for it to work, your bot needs to have either 1000+ gems or at least one gem sack.
 
