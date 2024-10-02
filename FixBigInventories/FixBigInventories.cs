@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
+using ArchiSteamFarm.Collections;
 using ArchiSteamFarm.Core;
 using ArchiSteamFarm.Plugins.Interfaces;
 using ArchiSteamFarm.Steam;
@@ -16,7 +17,7 @@ namespace FixBigInventories;
 #pragma warning disable CA1812 // ASF uses this class during runtime
 [UsedImplicitly]
 internal sealed class FixBigInventories : IGitHubPluginUpdates, IBotModules, IBotTradeOfferResults {
-	private readonly HashSet<Bot> EnabledBots = new();
+	private readonly ConcurrentHashSet<Bot> EnabledBots = [];
 	public string Name => nameof(FixBigInventories);
 	public string RepositoryName => "CatPoweredPlugins/FixBigInventories";
 	public Version Version => typeof(FixBigInventories).Assembly.GetName().Version ?? throw new InvalidOperationException(nameof(Version));
