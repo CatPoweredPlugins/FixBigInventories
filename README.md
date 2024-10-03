@@ -29,3 +29,5 @@ To enable triggering of this fix on a bot, you need to add to that's bot configu
   "EnableBigInventoryFix": true
 ```
 Please notice, that you have to keep correct structure of .json file, so you need to add commas (`,`) between consequtive parameters - so, after a parameter that goes before this parameter, if any, and after this parameter, if there are other parameters following it.
+
+![downloads](https://img.shields.io/github/downloads/CatPoweredPlugins/FixBigInventories/total.svg?style=social)
