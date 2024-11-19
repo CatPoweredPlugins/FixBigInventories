@@ -33,7 +33,7 @@ internal sealed class FixBigInventories : IGitHubPluginUpdates, IBotModules, IBo
 			if (tradeResults.Any(static result => result is { Result: ParseTradeResult.EResult.Accepted, Confirmed: true })) {
 				bool success = false;
 
-				await foreach (Asset item in bot.ArchiHandler.GetMyInventoryAsync().Where(static elem => elem.Type == EAssetType.SteamGems)) {
+				await foreach (Asset item in bot.ArchiHandler.GetMyInventoryAsync().Where(static elem => elem.Type == EAssetType.SteamGems).ConfigureAwait(false)) {
 					bot.ArchiLogger.LogGenericInfo("Big inventory fix triggered");
 
 					if (item.Description?.MarketHashName == "753-Sack of Gems") {
